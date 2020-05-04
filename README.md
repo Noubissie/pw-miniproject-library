@@ -1,6 +1,6 @@
 # how to use the library
 # {
-describe : pw_miniproject().describe,
+describe : pw_miniproject().describe(),
 
 bnf_names : pw_miniproject().feature_name_list(),
 
