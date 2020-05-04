@@ -21,6 +21,7 @@ joined : pw_miniproject(dataset=scripts).join_practice_and_prescription()
 item_by_post : pw_miniproject().group_by_field(dataset=joined,fields=('post_code',)).list_test_max_item()
 
 postal_totals : item_by_post
+
 total_items_by_bnf_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post(micro_attribute='bnf_name')
 
 total_items_by_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post()
