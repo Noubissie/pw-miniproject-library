@@ -10,36 +10,36 @@ class pw_miniproject(object):
 
     def __repr__(self):
         return "{\n\
-describe : pw_miniproject().describe,\n\
-\n\
-bnf_names : pw_miniproject().feature_name_list(),\n\
-\n\
-group : pw_miniproject().group_by_feature\n\
-\n\
-max_item : pw_miniproject().group_by_feature().max_item(),\n\
-\n\
-'challenge 1' group_by_field : pw_miniproject().group_by_field().group\n\
-\n\
-test_max_item : pw_miniproject().group_by_field().test_max_term()\n\
-\n\
-practice_postal :pw_miniproject().finding_practice_with_prescription()['K82019']\n\
-\n\
-'challenge 2' practice_postal_with_group : pw_miniproject().group_by_field(dataset=practices,fields=('code',)).finding_prac_with_script_using_group_by_field()\n\
-\n\
-joined : pw_miniproject(dataset=scripts).join_practice_and_prescription()\n\
-\n\
-item_by_post : pw_miniproject().group_by_field(dataset=joined,fields=('post_code',)).list_test_max_item()\n\
-\n\
-postal_totals : item_by_post\n\
-total_items_by_bnf_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post(micro_attribute='bnf_name')\n\
-\n\
-total_items_by_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post()\n\
-\n\
-max_item_by_post : :)\n\
-\n\
-items_by_region : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_region(micro_attribute='bnf_name')\n\
-\n\
-}"
+                    describe : pw_miniproject().describe,\n\
+                    \n\
+                    bnf_names : pw_miniproject().feature_name_list(),\n\
+                    \n\
+                    group : pw_miniproject().group_by_feature\n\
+                    \n\
+                    max_item : pw_miniproject().group_by_feature().max_item(),\n\
+                    \n\
+                    'challenge 1' group_by_field : pw_miniproject().group_by_field().group\n\
+                    \n\
+                    test_max_item : pw_miniproject().group_by_field().test_max_term()\n\
+                    \n\
+                    practice_postal :pw_miniproject().finding_practice_with_prescription()['K82019']\n\
+                    \n\
+                    'challenge 2' practice_postal_with_group : pw_miniproject().group_by_field(dataset=practices,fields=('code',)).finding_prac_with_script_using_group_by_field()\n\
+                    \n\
+                    joined : pw_miniproject(dataset=scripts).join_practice_and_prescription()\n\
+                    \n\
+                    item_by_post : pw_miniproject().group_by_field(dataset=joined,fields=('post_code',)).list_test_max_item()\n\
+                    \n\
+                    postal_totals : item_by_post\n\
+                    total_items_by_bnf_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post(micro_attribute='bnf_name')\n\
+                    \n\
+                    total_items_by_post : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_bnf_post()\n\
+                    \n\
+                    max_item_by_post : :)\n\
+                    \n\
+                    items_by_region : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_region(micro_attribute='bnf_name')\n\
+                    \n\
+                   }"
 
         
     # Question 1: summary_statistics
