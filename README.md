@@ -1,4 +1,5 @@
-{
+# how to use the library
+# {
 describe : pw_miniproject().describe,
 
 bnf_names : pw_miniproject().feature_name_list(),
@@ -28,4 +29,4 @@ max_item_by_post : :)
 
 items_by_region : pw_miniproject().group_by_feature(dataset=joined,feature='post_code').items_by_region(micro_attribute='bnf_name')
 
-}"
+# }"
