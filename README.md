@@ -4,7 +4,7 @@ describe : pw_miniproject().describe,
 
 bnf_names : pw_miniproject().feature_name_list(),
 
-group : pw_miniproject().group_by_feature
+group : pw_miniproject().group_by_feature().group 
 
 max_item : pw_miniproject().group_by_feature().max_item(),
 
