@@ -1,5 +1,3 @@
-scripts = "hello"
-practices="practices"
 class pw_miniproject(object):
     
     def __init__(self,dataset=scripts,group=""):
